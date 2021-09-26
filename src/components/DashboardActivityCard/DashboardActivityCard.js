@@ -1,5 +1,4 @@
 import "./DashboardActivityCard.scss";
-
 import icons from "../../assets/svg/icons.svg";
 
 function DashboardActivityCard({ data }) {
