@@ -1,0 +1,97 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.dashboard-activity-card {
+  .content {
+    color: $white;
+    background: $dark-blue;
+    cursor: pointer;
+    border-radius: $cards-border-radius;
+    padding: 3rem;
+    position: relative;
+
+    &:hover {
+      background: #33397a;
+    }
+
+    @include small-screen {
+      padding: 2.8rem 2.4rem;
+    }
+  }
+
+  .background {
+    border-radius: $cards-border-radius $cards-border-radius 0 0;
+    position: relative;
+    overflow: hidden;
+    height: 6rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .background-icon {
+    position: absolute;
+    top: -0.5rem;
+    right: 2rem;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+
+    @include small-screen {
+      margin-bottom: 0.7rem;
+    }
+
+    .activity {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    #icon-ellipsis {
+      fill: $pale-blue;
+    }
+
+    .button {
+      display: flex;
+      padding: 1rem;
+
+      &:hover {
+        #icon-ellipsis {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: block;
+
+    @include small-screen {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .current-hours {
+      font-size: 5.6rem;
+      font-weight: 300;
+      margin-bottom: 0.8rem;
+
+      @include small-screen {
+        font-size: 3.2rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .previous-hours {
+      color: $pale-blue;
+      font-size: 1.5rem;
+
+      @include small-screen {
+        margin: 0 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

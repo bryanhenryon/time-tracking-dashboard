@@ -11,14 +11,22 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-family: $font-family;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 ol,
 ul {
   list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }

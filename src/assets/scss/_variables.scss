@@ -2,6 +2,7 @@
 $font-family: "Rubik", sans-serif;
 
 // Colors
+$white: #fff;
 $blue: hsl(246, 80%, 60%);
 $light-red: hsl(15, 100%, 70%);
 $soft-blue: hsl(195, 74%, 62%);
@@ -12,3 +13,6 @@ $dark-blue: hsl(235, 46%, 20%);
 $very-dark-blue: hsl(226, 43%, 10%);
 $desatured-blue: hsl(235, 45%, 61%);
 $pale-blue: hsl(236, 100%, 87%);
+
+// Borders
+$cards-border-radius: 1.5rem;
