@@ -6,11 +6,9 @@ import DashboardActivityCard from "../DashboardActivityCard/DashboardActivityCar
 function Dashboard() {
   return (
     <div className="dashboard">
-      <div className="dashboard">
-        {data.map((data, index) => (
-          <DashboardActivityCard data={data} key={index} />
-        ))}
-      </div>
+      {data.map((data, index) => (
+        <DashboardActivityCard data={data} key={index} />
+      ))}
     </div>
   );
 }
