@@ -1,0 +1,58 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+.dashboard-user-card {
+  background-color: $blue;
+  grid-row: 1 / -1;
+  border-radius: $cards-border-radius;
+  padding: 3.7rem 3.2rem;
+
+  @include small-screen {
+    padding: 3.4rem 3.2rem;
+  }
+
+  .user-infos {
+    display: block;
+
+    @include small-screen {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .user-profile-picture {
+    height: 7.8rem;
+    width: 7.8rem;
+    border-radius: 50%;
+
+    @include small-screen {
+      height: 6.4rem;
+      width: 6.4rem;
+    }
+  }
+
+  .username-wrapper {
+    margin-top: 4.3rem;
+
+    @include small-screen {
+      margin-top: 0rem;
+      margin-left: 2rem;
+    }
+
+    .report-for {
+      font-size: 1.5rem;
+      margin-bottom: 0.3rem;
+      color: $pale-blue;
+    }
+
+    .username {
+      font-size: 4rem;
+      color: $white;
+      font-weight: 300;
+
+      @include small-screen {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
