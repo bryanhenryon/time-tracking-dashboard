@@ -4,9 +4,10 @@ import PropTypes from "prop-types";
 import UserProfilePicture from "../../assets/img/image-jeremy.png";
 import DashboardTimeframes from "../DashboardTimeframes/DashboardTimeframes";
 
-export default function DashboardUserCard({ changeTimeframe }) {
+export default function DashboardUserCard({ changeTimeframe, timeframe }) {
   DashboardUserCard.propTypes = {
     changeTimeframe: PropTypes.func,
+    timeframe: PropTypes.string,
   };
 
   return (
@@ -24,7 +25,10 @@ export default function DashboardUserCard({ changeTimeframe }) {
           <h1 className="username">Jeremy Robson</h1>
         </div>
       </div>
-      <DashboardTimeframes changeTimeframe={changeTimeframe} />
+      <DashboardTimeframes
+        changeTimeframe={changeTimeframe}
+        timeframe={timeframe}
+      />
     </div>
   );
 }

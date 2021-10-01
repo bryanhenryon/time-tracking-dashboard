@@ -12,7 +12,10 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <DashboardUserCard changeTimeframe={changeTimeframe} />
+      <DashboardUserCard
+        changeTimeframe={changeTimeframe}
+        timeframe={timeframe}
+      />
       {data.map((data, index) => (
         <DashboardActivityCard timeframe={timeframe} data={data} key={index} />
       ))}
