@@ -2,21 +2,19 @@
 @import "../../assets/scss/mixins";
 
 .dashboard-user-card {
-  background-color: $blue;
+  background: $dark-blue;
   grid-row: 1 / -1;
   border-radius: $cards-border-radius;
-  padding: 3.7rem 3.2rem;
-
-  @include small-screen {
-    padding: 3.4rem 3.2rem;
-  }
 
   .user-infos {
-    display: block;
+    padding: 3.7rem 3.2rem 8rem 3.2rem;
+    background: $blue;
+    border-radius: $cards-border-radius;
 
     @include small-screen {
       display: flex;
       align-items: center;
+      padding: 3.5rem 3.2rem;
     }
   }
 

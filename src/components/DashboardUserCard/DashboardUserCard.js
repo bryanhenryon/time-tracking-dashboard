@@ -1,6 +1,7 @@
 import "./DashboardUserCard.scss";
 
 import UserProfilePicture from "../../assets/img/image-jeremy.png";
+import DashboardTimeframes from "../DashboardTimeframes/DashboardTimeframes";
 
 export default function DashboardUserCard() {
   return (
@@ -18,6 +19,7 @@ export default function DashboardUserCard() {
           <h1 className="username">Jeremy Robson</h1>
         </div>
       </div>
+      <DashboardTimeframes />
     </div>
   );
 }
