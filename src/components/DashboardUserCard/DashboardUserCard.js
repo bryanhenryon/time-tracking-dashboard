@@ -1,9 +1,14 @@
 import "./DashboardUserCard.scss";
+import PropTypes from "prop-types";
 
 import UserProfilePicture from "../../assets/img/image-jeremy.png";
 import DashboardTimeframes from "../DashboardTimeframes/DashboardTimeframes";
 
 export default function DashboardUserCard({ changeTimeframe }) {
+  DashboardUserCard.propTypes = {
+    changeTimeframe: PropTypes.func,
+  };
+
   return (
     <div className="dashboard-user-card">
       <div className="user-infos">

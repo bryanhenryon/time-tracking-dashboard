@@ -1,6 +1,11 @@
 import "./DashboardTimeframes.scss";
+import PropTypes from "prop-types";
 
 export default function Timeframes({ changeTimeframe }) {
+  Timeframes.propTypes = {
+    changeTimeframe: PropTypes.func,
+  };
+
   return (
     <ul className="timeframes">
       <li>

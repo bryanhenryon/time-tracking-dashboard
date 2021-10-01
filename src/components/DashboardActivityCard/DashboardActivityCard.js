@@ -1,7 +1,13 @@
 import "./DashboardActivityCard.scss";
 import icons from "../../assets/svg/icons.svg";
+import PropTypes from "prop-types";
 
 function DashboardActivityCard({ data, timeframe }) {
+  DashboardActivityCard.propTypes = {
+    data: PropTypes.object,
+    timeframe: PropTypes.string,
+  };
+
   const backgroundCustomStyle = {
     backgroundColor: data.backgroundColor,
   };
