@@ -1,7 +1,7 @@
 import "./DashboardActivityCard.scss";
 import icons from "../../assets/svg/icons.svg";
 
-function DashboardActivityCard({ data }) {
+function DashboardActivityCard({ data, timeframe }) {
   const backgroundCustomStyle = {
     backgroundColor: data.backgroundColor,
   };
@@ -31,10 +31,10 @@ function DashboardActivityCard({ data }) {
 
         <div className="bottom">
           <div className="current-hours">
-            {data.timeframes.weekly.current}hrs
+            {data.timeframes[timeframe].current}hrs
           </div>
           <div className="previous-hours">
-            Last Week - {data.timeframes.weekly.previous}hrs
+            Last Week - {data.timeframes[timeframe].previous}hrs
           </div>
         </div>
       </div>

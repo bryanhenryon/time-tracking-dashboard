@@ -1,16 +1,25 @@
 import "./DashboardTimeframes.scss";
 
-export default function Timeframes() {
+export default function Timeframes({ changeTimeframe }) {
   return (
     <ul className="timeframes">
       <li>
-        <button className="timeframe">Daily</button>
+        <button className="timeframe" onClick={() => changeTimeframe("daily")}>
+          Daily
+        </button>
       </li>
       <li>
-        <button className="timeframe">Weekly</button>
+        <button className="timeframe" onClick={() => changeTimeframe("weekly")}>
+          Weekly
+        </button>
       </li>
       <li>
-        <button className="timeframe">Monthly</button>
+        <button
+          className="timeframe"
+          onClick={() => changeTimeframe("monthly")}
+        >
+          Monthly
+        </button>
       </li>
     </ul>
   );

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Dashboard.scss";
 import data from "../../data.json";
 
@@ -5,11 +6,15 @@ import DashboardActivityCard from "../DashboardActivityCard/DashboardActivityCar
 import DashboardUserCard from "../DashboardUserCard/DashboardUserCard";
 
 function Dashboard() {
+  const [timeframe, setTimeframe] = useState("weekly");
+
+  const changeTimeframe = (timeframe) => setTimeframe(timeframe);
+
   return (
     <div className="dashboard">
-      <DashboardUserCard />
+      <DashboardUserCard changeTimeframe={changeTimeframe} />
       {data.map((data, index) => (
-        <DashboardActivityCard data={data} key={index} />
+        <DashboardActivityCard timeframe={timeframe} data={data} key={index} />
       ))}
     </div>
   );
