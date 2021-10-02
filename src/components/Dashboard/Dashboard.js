@@ -11,7 +11,7 @@ function Dashboard() {
   const changeTimeframe = (timeframe) => setTimeframe(timeframe);
 
   return (
-    <div className="dashboard">
+    <main className="dashboard">
       <DashboardUserCard
         changeTimeframe={changeTimeframe}
         timeframe={timeframe}
@@ -19,7 +19,7 @@ function Dashboard() {
       {data.map((data, index) => (
         <DashboardActivityCard timeframe={timeframe} data={data} key={index} />
       ))}
-    </div>
+    </main>
   );
 }
 

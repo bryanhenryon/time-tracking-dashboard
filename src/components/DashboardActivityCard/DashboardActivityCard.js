@@ -28,8 +28,8 @@ function DashboardActivityCard({ data, timeframe }) {
       <div className="content">
         <div className="top">
           <div className="activity">{data.title}</div>
-          <button className="button">
-            <svg id="icon-ellipsis" height="5" width="21">
+          <button className="button" aria-label="A meaningless button">
+            <svg className="icon-ellipsis" height="5" width="21">
               <use href={icons + "#icon-ellipsis"}></use>
             </svg>
           </button>
